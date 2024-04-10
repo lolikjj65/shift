@@ -1,0 +1,1274 @@
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.editbackground{
+    height: 1350px;
+}
+
+.color {
+    height: 850px;
+    width: 850px;
+    background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: -225px;
+    left: -570px;
+    filter: blur(75px);
+    max-width: 100%;
+}
+
+.color1 {
+    height: 850px;
+    width: 850px;
+    background-image: radial-gradient(circle, rgb(11, 223, 251) 0%, rgb(11, 223, 251) 10%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 325px;
+    left: 1350px;
+    filter: blur(75px);
+    max-width: 100%;    
+}
+
+.color2 {
+    height: 850px;
+    width: 850px;
+    background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 700px;
+    left: -600px;
+    filter: blur(75px);
+    max-width: 100%;
+}
+
+.icon {
+    position: absolute;
+    top: 68%;
+    left: 14%;
+    transform: translate(-50%,-50%);
+    width: 112px;
+    height: 60px;
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 80px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.arrow::after, .arrow::before {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    
+}
+
+.arrow::after {
+    top: -4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    transform: rotate(45deg);
+}
+
+.arrow::before {
+    top: 4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+
+.icon1 {
+    position: absolute;
+    top: 68%;
+    left: 45.999%;
+    transform: translate(-50%,-50%);
+    width: 112px;
+    height: 60px;
+}
+
+.arrow1 {
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 80px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.arrow1::after, .arrow1::before {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    
+}
+
+.arrow1::after {
+    top: -4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    transform: rotate(45deg);
+}
+
+.arrow1::before {
+    top: 4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+.icon2 {
+    position: absolute;
+    top: 68%;
+    left: 78.1%;
+    transform: translate(-50%,-50%);
+    width: 112px;
+    height: 60px;
+}
+
+.arrow2 {
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    width: 80px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.arrow2::after, .arrow2::before {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjusted width */
+    height: 2px; /* Reduced height */
+    background-color: #fff;
+    
+}
+
+.arrow2::after {
+    top: -4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    transform: rotate(45deg);
+}
+
+.arrow2::before {
+    top: 4px; /* Adjusted position */
+    left: 70px; /* Adjusted position */
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+
+
+.btn-explore-more {
+    padding: 10px 25px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 30px; /* Rounded corners */
+    background: transparent; /* Transparent background */
+    color: white; /* White text */
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none; /* No underline */
+    position: relative; /* Position relative for the pseudo-elements */
+    transition: all 0.3s ease;
+    margin-top: 80px;
+}
+
+
+.btn-explore-more:hover {
+    background: white; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+ .btn-explore-more::after {
+    content: '→'; 
+    position: absolute; 
+    right: -0px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    transition: right 0.3s ease;
+}   
+
+.btn-explore-more:hover::after {
+    right: 10px; /* Move the arrow to the right on hover */
+}
+
+/* Additional styles for the container of the button to center it */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    width: 160px; /* Adjust the width as needed */
+}
+
+.nav__links a {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    margin-right: 70px; /* Adjust the margin as needed */
+    top: -10px;   
+}
+
+.nav__links a:last-child {
+    margin-right: 100; /* Remove margin from the last link */
+}
+
+.nav__links a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav__links a::before {
+    content: '';
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: .3s;
+}
+
+.nav__links a:hover::before{
+    width: 100%;
+}
+
+.insta_icon {
+    position: absolute;
+    top: 50px; /* Align vertically */
+    transform: translateY(-50%); /* Center vertically */
+    right: -10px; /* Adjust the position as needed */
+}
+
+.hero {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    background-size: cover;
+    padding: 175px 50px;
+    margin-top: -20px;
+}
+
+.hero h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    margin-bottom: 4em;
+    margin-left: -10px; /* Adjust the value to move the paragraph to the right */
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.btn-learn {
+    background-color: #6200EA;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2.5px;
+    transition: background-color 0.3s ease;
+    margin-right: 475px; /* Adjust the margin-right value as needed */
+    margin-top: 80px; /* Adjust the margin-top value to move the button down */
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.btn-learn:hover {
+    background-color: #650bec;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
+}
+.team-photo {
+    max-width: 50%; /* Adjust the maximum width of the image */
+    margin-right: -10px; /* Adjust the right margin to move the image horizontally */
+    margin-top: -70px; /* Adjust the top margin to move the image vertically */
+    margin-bottom: 30px; /* Adjust the bottom margin to move the image vertically */
+    border-radius: 10px; /* Apply border radius to the image */
+    position: relative; /* Enable positioning */
+    left: -5px; /* Move the image horizontally from its original position */
+    top: -10px; /* Move the image vertically from its original position */
+}
+
+.text-content h2 {
+    margin-top: -150px; /* Adjust as needed */
+    font-size: 1.8em;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.text-content h3 {
+    margin-top: -5px; /* Adjust as needed */
+    font-size: 1.8em;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.text-content p {
+   /* Adjust as needed */
+    text-align: left;
+    margin-top: 30px; /* You can still adjust the top margin */
+    margin-left: 55px; /* Example of padding adjustment */
+    position: relative; /* Example of relative positioning */
+    left: 30px; /* Example of left positioning */
+}
+
+
+
+
+
+.pagination {
+    text-align: center;
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 7px;
+    margin-top: 75px;
+    cursor: pointer;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover{
+    background-color: white;
+}
+
+/* Vous pouvez ajouter des classes supplémentaires pour gérer l'état actif */
+.dot.active {
+    background-color: #717171;
+}
+#team {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#team .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+#team h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#team p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: calc(33.333% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 150%; /* Increase the width to make the picture bigger */
+    max-width: unset; /* Ensure there's no maximum width constraint */
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+
+.team-member h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 1rem;
+}
+
+
+#events-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 900px;
+}
+
+.ourevent-text {
+    font-family: "Open Sans", sans-serif;
+    color: #333; /* Adjust color as needed */
+    margin-bottom: -65px;
+    font-size: 18px;
+}
+
+.ourevent-text h5 {
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 0.5em; /* Adjust spacing as needed */
+    margin-left: -585px; /* Adjust left margin to move it horizontally */
+    margin-top: 50px;
+    
+}
+
+
+.ourevent-text p {
+    font-size: 1em; /* Adjust size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-left: -580px;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+
+
+.photo-left {
+    position: relative;
+}
+
+.photo-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 99.70%;
+    background-color: rgba(141, 30, 237, 0.5); /* Adjust the overlay color and opacity as needed */
+    border-radius: 8px;
+    margin-left: -150px;
+}
+
+.photo-left img {
+    border-radius: 8px;
+    width: 650px;
+    cursor: pointer;
+    position: relative;
+    object-fit: cover;
+    display: block;
+    margin-left: -150px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    color: white;
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-left: -150px;
+    z-index: 1;
+}
+
+.btn-explore-more1 {
+    padding: 10px 25px;
+    
+    border-radius: 30px; /* Rounded corners */
+    background: transparent; /* Transparent background */
+    color: white; /* White text */
+    font-size: 1em;
+    text-decoration: none; /* No underline */
+    position: relative; /* Position relative for the pseudo-elements */
+    transition: all 0.3s ease;
+    top: 425px; /* Adjust top value to move it up or down */
+    left: 490px; /* Adjust left value to move it left or right */
+    z-index: 1;
+}
+
+
+
+
+.btn-explore-more:hover {
+    background: rgb(255, 255, 255); /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+
+.photo-right img{
+    border-radius: 8px;
+    width: 475px;
+    
+}
+
+.photo-left {
+    margin-right: 20px; /* Adjust the margin-right value to create space */
+}
+
+.photo-right {
+    margin-left: 20px; /* Adjust the margin-left value to create space */
+}
+
+.btn-learn1 {
+    background-color: #6200EA;
+    padding: 12px 35px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2.5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.btn-learn1:hover{
+    background-color: #7c2af0;
+}
+
+
+#btn_event {
+    margin-top: 20px; /* Adjust margin as needed */
+    display: inline-block; /* Ensure the button takes only the necessary width */
+}
+
+
+
+
+
+#testimonials {
+    position: relative;
+    background: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* Push containers to the right */
+
+}
+
+.contact-inputs1{
+    position: relative;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 255, 255);
+    top: 150px; /* Adjust top value to move it up or down */
+    left: -145px; 
+}
+.contact-inputs1::placeholder {
+    /* Placeholder text styles */
+    color: rgba(255, 255, 255, 0.7); /* Adjust color as needed */
+    font-weight: 400; /* Adjust font weight as needed */
+}
+
+.saidabout {
+    position: relative; /* Position the button relative to its container */
+}
+
+.placeholder-button {
+    position: absolute; /* Position the button absolutely */
+    top: 83%; /* Align the button vertically */
+    right: 70%; /* Align the button to the right */
+    transform: translateY(-50%); /* Center the button vertically */
+    width: 35px; /* Adjust the width of the button */
+    height: 35px; /* Adjust the height of the button */
+    background-image: url('testimo.png'); /* URL of the image */
+    background-size: cover; /* Scale the background image to cover the button */
+    border: 15px; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.rounded-image {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
+    position: relative; /* Enable positioning */
+    top: 200px; /* Adjust the vertical position */
+    left: -375px; /* Adjust the horizontal position */
+}
+
+.rounded-image1 {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
+    position: relative; /* Enable positioning */
+    top: 200px; /* Adjust the vertical position */
+    left: -825px; /* Adjust the horizontal position */
+}
+
+
+.portraits {
+    position: relative; /* Enable positioning for the container */
+}
+
+.p5 {
+    position: absolute; /* Position the text absolutely */
+    top: 210px; /* Adjust the vertical position */
+    left: -325px; /* Adjust the horizontal position */
+    margin: 0; /* Remove default margin */
+}
+
+.p6 {
+    position: absolute; /* Position the text absolutely */
+    top: 210px; /* Adjust the vertical position */
+    left: -730px; /* Adjust the horizontal position */
+     /* Remove default margin */
+}
+
+
+
+.color3 {
+    height: 250px;
+    width:250px;
+    background-image: radial-gradient(circle, rgb(110, 0, 189) 0%, rgb(55, 7, 227) 20%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 25px;
+    left: 800px;
+    filter: blur(75px);
+        
+}
+
+.color4 {
+    height: 250px;
+    width:250px;
+    background-image: radial-gradient(circle, rgb(110, 0, 189) 0%, rgb(55, 7, 227) 20%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 25px;
+    left: 800px;
+    filter: blur(75px);
+        
+}
+
+.color5 {
+    height: 250px;
+    width:250px;
+    background-image: radial-gradient(circle, rgb(110, 0, 189) 0%, rgb(55, 7, 227) 20%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 200px;
+    left: -25px;
+    filter: blur(75px);
+        
+}
+
+
+.color6 {
+    height: 250px;
+    width:250px;
+    background-image: radial-gradient(circle, rgb(110, 0, 189) 0%, rgb(55, 7, 227) 20%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    top: 200px;
+    left: -25px;
+    filter: blur(75px);
+        
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 20px; /* Adjust as needed */
+    position: relative;
+}
+.h2-container {
+    width: 350px; /* Adjust the width of the box */
+    height: 150px; /* Adjust the height of the box */
+    margin: 30px; /* Add spacing between the boxes */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h2-container h2 {
+    font-size: 2.5em; /* Adjust the font size */
+    text-align: center; /* Center the text */
+}
+
+.p-container {
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    position: absolute; /* Position the container */
+    top: 5%; /* Adjust the top position */
+    right: 950px; /* Adjust the right position */
+    white-space: nowrap; /* Prevent line breaks *//
+}
+
+.p-container p {
+    font-size: 2.7em; /* Adjust the font size */
+}
+
+
+
+
+.prev {
+    background-color: #650bec; /* Adjust background color as needed */
+    color: white; /* Text color */
+    font-size: 1.5em;
+    position: absolute;
+    top: -5%; /* Position relative to parent */
+    transform: translateY(-50%); /* Center vertically */
+    right: 60px; /* Adjust distance from right edge */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above other elements */
+    left: 710px;
+}
+
+.next {
+    background-color: #650bec; /* Adjust background color as needed */
+    color: white; /* Text color */
+    font-size: 1.5em;
+    position: absolute;
+    top: -5%; /* Position relative to parent */
+    transform: translateY(-50%); /* Center vertically */
+    right: 10px; /* Adjust distance from right edge */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+
+.prev:hover, .next:hover {
+    background-color: #4b02a6; /* Darker color on hover */
+}
+
+
+.prev {
+    right: 0px; /* Position the "prev" button on the top right */
+}
+
+.next {
+    right: 25px; /* Position the "next" button next to the "prev" button */
+}
+
+
+.btn-feedback {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #6e45e2;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-feedback:hover {
+    background-color: #6e45e2;
+    color: white;
+}
+
+.btn-feedback:after {
+    content: "➤";
+    display: inline-block;
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.btn-feedback:hover:after {
+    margin-left: 15px;
+}
+.feedback-input-container {
+    background: linear-gradient(135deg, #6e45e2 0%,  #8563a4 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 400px; /* Ajustez la largeur selon votre mise en page */
+    margin: 20px auto;
+}
+
+.feedback-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+.feedback-submit {
+     /* Ou la couleur de fond de votre choix */
+    border: none;
+    border-radius: 15%;
+    background-color: #650bec;
+     /* Arrondir les coins à droite */
+    padding: 9px;
+    cursor: pointer;
+}
+
+.pencil-icon {
+    width: 23px;
+    height: 23px;
+}
+#contact-us {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px; /* Adjust the space between columns */
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 400px; /* Adjust image size */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.contact-form form {
+    flex: 1;
+    max-width: 500px; /* Adjust form width */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #fff;
+}
+
+.contact-form button {
+    background-color: #6200EA; /* Button color */
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #7f00ff; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form form {
+        width: 100%;
+        max-width: none;
+        padding: 0 15px; /* Add padding on smaller screens */
+    }
+
+    .contact-info {
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .contact-image {
+        margin-top: 20px; /* Add space above the image on smaller screens */
+    }
+}
+
+   
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;    
+    gap: 15px; 
+    background-color: #ebebeb;      
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    margin-left: 800px; /* Adjust as needed to move it to the right */
+
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: -1000px;
+}
+
+.contact-right-title h2{
+    font-weight: 600;
+    color: #010101;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-right-title hr{
+    border: none;
+    width: 240px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+} 
+
+.contact-inputs{
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #373737;
+    border-radius: 7px;
+}
+
+.contact-right textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+}
+
+.contact-right textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #650bec;
+}
+    .contact-inputs::placeholder{
+    color: #a9a9a9;
+}    
+
+.contact-right button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #650bec;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.contact-right button img{
+    height: 15px;
+}
+
+.contact-left img{
+    width: 475px;
+    border-radius: 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 800px) { /* Added 'and' after 'screen' */
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-left { /* Removed extra 'I' before .contact-left */
+        display: none;
+    }
+    .team-member {
+        width: calc(50% - 20px); /* Adjust for mobile */
+    }
+    .social-icons {
+        display: none;
+    }
+    
+    .social-icons img {
+        display: none;
+    }
+    
+}
+
+
+/* footer */
+
+
+
+.footer {
+    background-color: #650bec; /* Dark purple background */
+    color: white;
+    padding: 50px 0; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    
+}
+.footer div,
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer li {
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-left:37px; /* Adjust spacing to move the links right */
+    margin-right: 15px; /* Adjust spacing to move the links left */
+    margin-bottom: 25px;
+    position: relative;
+    left: -75px;
+    top: 7px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer {
+    position: relative; /* Ensure positioning context for absolute positioning */
+}
+
+.footer .follow-us {
+    position: absolute;
+    top: 65px; /* Adjust the distance from the top */
+    right: 350px; /* Adjust the distance from the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.footer .menu {
+    position: absolute;
+    top: 65px; /* Adjust the distance from the top */
+    right: 1350px; /* Adjust the distance from the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.footer .contact {
+    position: absolute;
+    top: 65px; /* Adjust the distance from the top */
+    right: 833px; /* Adjust the distance from the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.footer .social-icons {
+    position: absolute;
+    top: 56px; /* Adjust the distance from the top */
+    right: 160px; /* Adjust the distance from the right */
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons p {
+    margin: 0; /* Remove default margin */
+}
+
+
+.footer .social-icons1 {
+    position: absolute;
+    top: 54px; /* Adjust the distance from the top */
+    right: 120px; /* Adjust the distance from the right */
+}
+
+.social-icons1 img {
+    width: 35px; /* Adjust the width of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons1 p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-info {
+    position: relative;
+    bottom: 56px;
+    left: 180px;
+}
+
+.contact-info1 {
+    position: relative;
+    bottom: 40px;
+    left: 102px;
+}
+
+
+.contact-info span,
+.contact-info a {
+    margin: 0 10px; /* Adjust left and right margin */
+}
+
+
+
+.contact-info,
+.activate-section,
+.copyright {
+    flex-basis: 100%; /* Each section takes up full width */
+    text-align: center; /* Center align text */
+    margin-top: 10px; /* Add some top margin for spacing */
+}   
+.footer-bottom {
+    background-color: #000000; /* Dark purple background */
+    color: white;
+    padding: 20px 0; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.footer-bottom a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    margin: 0 10px; /* Add spacing between links */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6b17ea;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+        z-index: 1;
+    }
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #5d28ad;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}

@@ -1,0 +1,555 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    height: 600px; /* Adjust the height as needed */
+    position: relative;
+}
+
+.editbackground {
+    height: 600px; /* Adjust the height to match body, html */
+}
+
+
+
+
+  body{
+    overflow-x: hidden;
+  }
+  
+  .editbackground{
+      height: 1350px;
+  }
+  
+  .color {
+      height: 850px;
+      width: 850px;
+      background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+      position: absolute;
+      top: -225px;
+      left: -570px;
+      filter: blur(75px);
+      max-width: 100%;
+  }
+  
+  .color1 {
+      height: 850px;
+      width: 850px;
+      background-image: radial-gradient(circle, rgb(11, 223, 251) 0%, rgb(11, 223, 251) 10%, rgba(255, 255, 255, 0) 70%);
+      position: absolute;
+      top: 325px;
+      left: 1350px;
+      filter: blur(75px);
+      max-width: 100%;    
+  }
+  
+  .color2 {
+      height: 850px;
+      width: 850px;
+      background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+      position: absolute;
+      top: 700px;
+      left: -600px;
+      filter: blur(75px);
+      max-width: 100%;
+  }
+  
+  .icon {
+      position: absolute;
+      top: 68%;
+      left: 14%;
+      transform: translate(-50%,-50%);
+      width: 112px;
+      height: 60px;
+  }
+  
+  .arrow {
+      position: absolute;
+      top: -5px;
+      left: -30px;
+      width: 80px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  }
+  
+  .arrow::after, .arrow::before {
+      content: '';
+      position: absolute;
+      width: 10px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      
+  }
+  
+  .arrow::after {
+      top: -4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      transform: rotate(45deg);
+  }
+  
+  .arrow::before {
+      top: 4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+      transform: rotate(-45deg);
+  }
+  
+  
+  .icon1 {
+      position: absolute;
+      top: 68%;
+      left: 45.999%;
+      transform: translate(-50%,-50%);
+      width: 112px;
+      height: 60px;
+  }
+  
+  .arrow1 {
+      position: absolute;
+      top: -5px;
+      left: -30px;
+      width: 80px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  }
+  
+  .arrow1::after, .arrow1::before {
+      content: '';
+      position: absolute;
+      width: 10px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      
+  }
+  
+  .arrow1::after {
+      top: -4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      transform: rotate(45deg);
+  }
+  
+  .arrow1::before {
+      top: 4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+      transform: rotate(-45deg);
+  }
+  
+  .icon2 {
+      position: absolute;
+      top: 68%;
+      left: 78.1%;
+      transform: translate(-50%,-50%);
+      width: 112px;
+      height: 60px;
+  }
+  
+  .arrow2 {
+      position: absolute;
+      top: -5px;
+      left: -30px;
+      width: 80px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  }
+  
+  .arrow2::after, .arrow2::before {
+      content: '';
+      position: absolute;
+      width: 10px; /* Adjusted width */
+      height: 2px; /* Reduced height */
+      background-color: #fff;
+      
+  }
+  
+  .arrow2::after {
+      top: -4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      transform: rotate(45deg);
+  }
+  
+  .arrow2::before {
+      top: 4px; /* Adjusted position */
+      left: 70px; /* Adjusted position */
+      box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
+      transform: rotate(-45deg);
+  }
+    
+  header {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  }
+  
+  .logo img {
+      width: 160px; /* Adjust the width as needed */
+  }
+  
+  .nav__links a {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #edf0f1;
+      text-decoration: none;
+      margin-right: 70px; /* Adjust the margin as needed */
+      top: -10px;   
+  }
+  
+  .nav__links a:last-child {
+      margin-right: 100; /* Remove margin from the last link */
+  }
+  
+  .nav__links a {
+      position: relative;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+  }
+  
+  .nav__links a::before {
+      content: '';
+      position: absolute;
+      top: 150%;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: #fff;
+      transition: .3s;
+  }
+  
+  .nav__links a:hover::before{
+      width: 100%;
+  }
+  
+  .insta_icon {
+      position: absolute;
+      top: 50px; /* Align vertically */
+      transform: translateY(-50%); /* Center vertically */
+      right: -10px; /* Adjust the position as needed */
+  }
+  
+  .editbackground {
+    height: 500px; /* Adjusted height to reduce the distance */
+}
+
+
+  .footer {
+      background-color: #650bec; /* Dark purple background */
+      color: white;
+      padding: 50px 0; /* Increased padding for better spacing */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      top: 1350px;
+  }
+  .footer div,
+  .footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  .footer li {
+      padding: 5px 0;
+      display: inline-block;
+  }
+  
+  .footer a {
+      color: white;
+      text-decoration: none;
+      margin-left:37px; /* Adjust spacing to move the links right */
+      margin-right: 15px; /* Adjust spacing to move the links left */
+      margin-bottom: 25px;
+      position: relative;
+      left: -75px;
+      top: 7px;
+  }
+  
+  .footer a:hover {
+      text-decoration: underline;
+  }
+  
+  
+  
+  .footer {
+      position: relative; /* Ensure positioning context for absolute positioning */
+  }
+  
+  .footer .follow-us {
+      position: absolute;
+      top: 65px; /* Adjust the distance from the top */
+      right: 350px; /* Adjust the distance from the right */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+  }
+  
+  .footer .menu {
+      position: absolute;
+      top: 65px; /* Adjust the distance from the top */
+      right: 1350px; /* Adjust the distance from the right */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+  }
+  
+  .footer .contact {
+      position: absolute;
+      top: 65px; /* Adjust the distance from the top */
+      right: 833px; /* Adjust the distance from the right */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+  }
+  
+  
+  .footer .social-icons {
+      position: absolute;
+      top: 56px; /* Adjust the distance from the top */
+      right: 160px; /* Adjust the distance from the right */
+  }
+  
+  .social-icons img {
+      width: 30px; /* Adjust the width of the icon */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
+  .social-icons p {
+      margin: 0; /* Remove default margin */
+  }
+  
+  
+  .footer .social-icons1 {
+      position: absolute;
+      top: 54px; /* Adjust the distance from the top */
+      right: 120px; /* Adjust the distance from the right */
+  }
+  
+  .social-icons1 img {
+      width: 35px; /* Adjust the width of the icon */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
+  .social-icons1 p {
+      margin: 0; /* Remove default margin */
+  }
+  
+  .contact-info {
+      position: relative;
+      bottom: 56px;
+      left: 180px;
+  }
+  
+  .contact-info1 {
+      position: relative;
+      bottom: 40px;
+      left: 102px;
+  }
+  
+  
+  .contact-info span,
+  .contact-info a {
+      margin: 0 10px; /* Adjust left and right margin */
+  }
+  
+  
+  
+  .contact-info,
+  .activate-section,
+  .copyright {
+      flex-basis: 100%; /* Each section takes up full width */
+      text-align: center; /* Center align text */
+      margin-top: 10px; /* Add some top margin for spacing */
+  }   
+  .footer-bottom {
+      background-color: #000000; /* Dark purple background */
+      color: white;
+      padding: 20px 0; /* Increased padding for better spacing */
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      align-items: center;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      top: 1350px;
+  }
+  
+  .footer-bottom a {
+      color: #ffffff; /* White color for links */
+      text-decoration: none;
+      margin: 0 10px; /* Add spacing between links */
+  }
+  
+  .footer-bottom a:hover {
+      text-decoration: underline;
+  }
+  
+  
+     
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 45px;
+}
+
+.application-form {
+    top: 25px;
+    max-width: 500px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color and opacity */
+    border-radius: 8px;
+    background-color: rgba(197, 159, 159, 0.3); /* Adjust background color and opacity */
+    backdrop-filter: blur(10px); /* Adjust blur amount */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow color and opacity */
+}
+
+
+.application-form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.application-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #650bec;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.application-form button:hover {
+    background-color: #761bff;
+}
+
+
+.application-head {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as needed */
+  
+    backdrop-filter: blur(10px); /* Adjust blur amount */
+}
+
+.application-head form {
+    max-width: 550px; /* Adjust as needed */
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color and opacity */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust background color and opacity */
+    backdrop-filter: blur(10px); /* Adjust blur amount */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow color and opacity */
+}
+
+.application-head h2,
+.application-head p {
+    margin-bottom: 10px;
+}
+
+
+
+.main-content {
+    padding: 20px;
+}
+
+.application-form {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.application-form label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.application-form input[type="text"],
+.application-form input[type="tel"],
+.application-form input[type="email"],
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+.application-form button {
+    
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Placeholder styling */
+.application-form input::placeholder,
+.application-form textarea::placeholder {
+    color: #999;
+}
+
+.application-form input:focus::placeholder,
+.application-form textarea:focus::placeholder {
+    color: transparent;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 20px; /* Adjust as needed */
+    position: relative;
+    height: 1500px; /* Adjust the height as needed */
+}
+
+
+
+
+
