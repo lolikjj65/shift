@@ -1,92 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Untitled design-2.png">
     <title>SHIFT</title>
-    <link rel="stylesheet" href="applicationstyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
+
 <body>
     <a id="button1"></a>
     <section class="editbackground">
         <div class="color"></div>
-    <div class="color1"></div>
-    <div class="color2"></div>
-    <div class="square"></div>
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="square"></div>
         <header>
-                <a class="logo" href="index.html"><img src="SHIFT logo remastered(1).png" alt="logo"></a>
-                <nav>
-                    <ul class="nav__links">
-                        <a href="index.html">Home</a>
-                        <a href="index.html">Events</a>
-                        <a href="index.html">About us</a>
-                        <a href="index.html">Contact</a>
-                        <a href="application.html" target="_blank">Application</a>
-                        <a class="insta_icon" href="https://www.instagram.com/marrakeshift/" target="_blank">
-                            <img src="icons8-instagram-26.png" alt="Instagram">
-                        </a>
-                    </ul>
-                </nav>
-        </header>   
-        <section  class="application-head">
-            <section class="application-head">
-                <form action="" class="application-head-form">
-                    <h2>SHIFT Membership Application Form 23.2</h2>
-                    <p>🧞 Welcome to the SHIFT Membership Application Form!</p>
-                    <p>Please complete the following application to help us get to know you better and assess your fit within SHIFT. This is the first step in our selection process, which includes shortlisting candidates, an interview process, and a final decision.</p>
-                    <p>We value your honesty and look forward to learning more about your aspirations, experiences, and potential contributions to our mission of personal development and growth.</p>
-                </form>
-            </section>
-        </section> 
-        <section class="main-content">
-            <form action="https://api.web3forms.com/submit" method="POST" class="application-form">
-                <input type="hidden" name="access_key" value="06003451-2524-480c-853a-2a4e26be505e">    
-                <form action="#" method="POST" class="application-form">
-                <label for="fullName">Full Name *</label>
-                <input type="text" placeholder="Your answer" id="fullName" name="fullName" required>
-    
-                <label for="phoneNumber">Phone Number *</label>
-                <input type="tel" placeholder="Your answer" id="phoneNumber" name="phoneNumber" required>
-    
-                <label for="emailAddress">Email Address *</label>
-                <input type="email" placeholder="Your answer" id="emailAddress" name="emailAddress" required>
-    
-                <label for="gender">Gender *</label>
-                <select id="gender" name="gender" required>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-    
-                <label for="dateOfBirth">Date of Birth *</label>
-                <input type="date" placeholder="Your answer" id="dateOfBirth" name="dateOfBirth" required>
-    
-                <label for="educationLevel">Highest level education completed *</label>
-                <input type="text"  placeholder="Your answer" id="educationLevel" name="educationLevel" required>
-    
-                <label for="schoolUniversityName">School/University Name *</label>
-                <input type="text"placeholder="Your answer"  id="schoolUniversityName" name="schoolUniversityName" required>
-    
-                <label for="occupation">What is your current occupation and how long have you been doing it? *</label>
-                <textarea id="occupation"placeholder="Your answer" name="occupation" rows="4" required></textarea>
-    
-                <label for="cityOfWork">City of studies/work *</label>
-                <input type="text" placeholder="Your answer"id="cityOfWork" name="cityOfWork" required>
-    
-                <label for="homeCity">Home city *</label>
-                <input type="text" placeholder="Your answer"id="homeCity" name="homeCity" required>
-    
+            <a class="logo" href="index.html"><img src="SHIFT logo remastered(1).png" alt="logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <nav>
+                <ul class="nav__links">
+                    <a href="#hero" onclick="scrollDown(this)">Home</a>
+                    <a href="#events-section" onclick="scrollDown(this)">Events</a>
+                    <a href="#testimonials" onclick="scrollDown(this)">About us</a>
+                    <a href="#contact-section" onclick="scrollDown(this)">Contact</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIojUov6Ckwwo4LlSNCeIB59_3Y0qq55wAfqUfp8048A8GTw/viewform" target="_blank">Application</a>
+                    <a class="insta_icon" href="https://www.instagram.com/marrakeshift/" target="_blank">
+                        <img src="icons8-instagram-26.png" alt="Instagram">
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero" id="hero">
+            <h1>Dorem ipsum dolor sit amet,<br> dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et turpis molestie,<br> dictum est a,
+                mattis tellus.</p>
+            <div>
+                <a href="#" class="btn-explore-more">Explore more</a>
+            </div>
+            <div class="pagination">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="content">
+                <img src="shiftco.jpg" alt="Team" class="team-photo">
+                <div class="text-content">
+                    <h2>SHIFT MARRAKECH</h2>
+                    <h3>Dorem ipsum dolor sit amet, consecteur</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et turpis molestie, dictum est a,
+                        mattis tellus... <br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <br><br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        <br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        <br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                    <a href="#" class="btn-learn">Learn more</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="events-section">
+        <div class="ourevent-text">
+            <h5>OUR EVENTS</h5>
+            <P>Dorem ipsum dolor sit amet,consecteur adipiscing elit. <br>Etiam eu turpis molestie, dicutm est a, mattis
+                tellus</P>
+        </div>
+        <div class="photos-container">
+            <div class="btn-explore-more1">
+                <a href="#" class="btn-explore-more">Explore more</a>
+            </div>
+            <div class="photo-left">
+                <div class="gradient"></div>
+                <img src="shiftco.jpg" alt="Left Photo">
+                <div class="overlay-text">
+                    <h1>SHIFT CO</h1>
+                    <p>Dorem ipsum dolor sit amet,consecteur adipiscing elit. <br>Etiam eu turpis molestie, dicutm est
+                        a, mattis tellus</p>
+                </div>
+
+            </div>
+            <div class="photo-right">
+                <img src="confer.png" alt="Right Photo">
+            </div>
+        </div>
+        <div id="btn_event">
+            <a href="#" class="btn-learn1">Learn more +</a>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="color3"></div>
+        <div class="color4"></div>
+        <div class="color5"></div>
+        <div class="color6"></div>
+        <div class="square"></div>
+        <div class="saidabout">
+            <input type="text" name="name" placeholder="What about you?" class="contact-inputs1" required>
+            <button type="submit" class="placeholder-button"></button>
+        </div>
+        <div id="testimonial">
+            <div class="container">
+                <div class="container">
+                    <!-- Les témoignages ici -->
+                    <div class="h2-container">
+                        <p>"Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et turpis molestie."</p>
+
+                    </div>
+                    <div class="h2-container">
+                        <p>"Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et turpis molestie."</p>
+
+                    </div>
+
+                    <!-- Ajoutez autant de témoignages que nécessaire -->
+                </div>
+                <div class="p-container">
+                    <p>What's said <br>about us</p>
+                </div>
+                <button class="slider-button prev">❮</button>
+                <button class="slider-button next">❯</button>
+            </div>
+        </div>
+        <div class="portraits">
+            <p class="p5">Dorem Ipsum</p>
+            <p class="p6">Dorem Ipsum</p>
+            <img src="portrait.jpeg" alt="Avatar" class="rounded-image">
+            <img src="portrait.jpeg" alt="Avatar1" class="rounded-image1">
+        </div>
+
+
+
+    </section>
+
+    <section id="contact-section">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-right">
+                <div class="contact-right-title">
+                    <h2>Contact us</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="06003451-2524-480c-853a-2a4e26be505e">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
                 <button type="submit">Submit</button>
             </form>
-        </section>
-        
+            <div class="contact-left">
+                <img src="pics.png" alt="">
+            </div>
+        </div>
+    </section>
+    <a href="#" class="back-to-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>
 
 </body>
 
@@ -102,10 +179,10 @@
     </div>
     <div>
         <p class="menu">Menu</p>
-        
-            <p class="contact">Contact us</p>
-        
-        
+
+        <p class="contact">Contact us</p>
+
+
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="application.html" target="_blank">Application</a></li>
@@ -121,31 +198,31 @@
         <a href="https://www.instagram.com/marrakeshift/" target="_blank">
             <img src="icons8-instagram-26.png" alt="Instagram">
         </a>
-        
+
     </div>
     <div class="social-icons1">
         <a href="https://www.tiktok.com/@marrakeshift" target="_blank">
             <img src="icons8-tiktok-50.png" alt="Tiktok">
         </a>
-        
+
     </div>
     <div>
         <ul class="social-icons">
-            <!-- Icons would go here -->
+
         </ul>
     </div>
-   
+
     <div class="contact-info">
-        
+
         <span><a href="mailto:contact@shiftmarrakech.com">contact@shiftmarrakech.com</a></span>
-        
+
     </div>
     <div class="contact-info1">
-        <span>+212 500 0000 /  +212 500 0000</span>
+        <span>+212 500 0000 / +212 500 0000</span>
     </div>
-    
-        
-    
+
+
+
 </footer>
 
 <footer class="footer-bottom">
@@ -162,15 +239,46 @@
         </div>
     </div>
 </footer>
-    
+
 
 
 <script>
-        $(document).ready(function() {
-    $('.back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 'slow');
-    });
-});
+    function scrollDown(prop) {
+        const targetId = prop.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // Adjust the duration as needed
+            let start = null;
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+
+            window.requestAnimationFrame(step);
+        }
+        function easeInOutCubic(t, b, c, d) {
+            console.log("Ease in out cubic called");
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+            return c / 2 * ((t -= 2) * t * t + 2) + b;
+        }
+    }
 </script>
+<script>
+    $(document).ready(function () {
+        $('.back-to-top').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+    });
+</script>
+
 </html>
