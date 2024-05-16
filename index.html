@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 
 <body>
@@ -24,9 +24,14 @@
         <div class="square"></div>
         <header>
             <a class="logo" href="index.html"><img src="SHIFT logo remastered(1).png" alt="logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
             <nav>
                 <ul class="nav__links">
-                    <a href="#hero">Home</a>
+                    <a href="#hero" onclick="scrollDown(this)">Home</a>
                     <a href="#events-section" onclick="scrollDown(this)">Events</a>
                     <a href="#testimonials" onclick="scrollDown(this)">About us</a>
                     <a href="#contact-section" onclick="scrollDown(this)">Contact</a>
@@ -63,7 +68,6 @@
                         <br>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
                     <a href="#" class="btn-learn">Learn more</a>
                 </div>
-
             </div>
         </section>
     </section>
@@ -149,7 +153,6 @@
                 <input type="hidden" name="access_key" value="06003451-2524-480c-853a-2a4e26be505e">
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-
                 <textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
                 <button type="submit">Submit</button>
             </form>
@@ -178,11 +181,9 @@
         <p class="menu">Menu</p>
 
         <p class="contact">Contact us</p>
-
-
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="application.html" target="_blank">Application</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScIojUov6Ckwwo4LlSNCeIB59_3Y0qq55wAfqUfp8048A8GTw/viewform" target="_blank">Application</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <ul class="link">
