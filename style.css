@@ -29,6 +29,7 @@ body, html {
 
 body{
     overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .editbackground{
@@ -294,6 +295,247 @@ header {
     right: -10px; /* Adjust the position as needed */
 }
 
+.icons {
+    position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+
+#check {
+     display: none;
+}
+
+@media (max-width : 992px) {
+    .header {
+        padding : 1.3rem 5%;
+    }
+    .logo img {
+        width: 100px; /* Adjust the width as needed */
+        position: relative;
+        right: 55px;
+        top: 5px;
+    }
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        border: 10px solid red;
+    }
+}
+
+@media only screen and  (max-width : 768px) {
+    body {
+        overflow-x: 1; /* Prevent horizontal scrolling */
+    }
+
+    .icons {
+        display: block;
+        position: relative;
+        left: 65px;
+        top: 2px;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .nav__links {
+        position: absolute;
+        top: 100%;
+        height: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden; /* Hide overflow content */
+        text-align: center;
+        background-color: rgba(101, 11, 236, 0.8); /* Fallback color with transparency */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+        border-radius: 8px;
+    }
+    
+    #check:checked ~ .nav__links {
+        height: 17.7rem;
+    }
+    
+    .nav__links li {
+        display: block;
+        text-align: center;
+    }
+    
+    .nav__links a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-decoration: none; /* Remove underline */
+        color: white; /* Set text color */
+    }
+    
+    .nav__links a:hover {
+        color: #fff; /* Change text color on hover */
+    }
+    
+    .nav__links .insta_icon {
+        margin-top: 1.5rem; /* Adjust margin for Instagram icon */
+    }
+    
+    #check {
+        display: none;
+    }
+
+    #check:checked ~ nav .nav__links {
+        height: 17.7rem;
+    }
+
+    .color {
+        height: 540px;
+        width: 540px;
+        background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+        position: absolute;
+        top: -225px;
+        left: -250px;
+        filter: blur(75px);
+        max-width: 100%;
+    }
+    
+    .color1 {
+        height: 850px;
+        width: 850px;
+        background-image: radial-gradient(circle, rgb(11, 223, 251) 0%, rgb(11, 223, 251) 10%, rgba(255, 255, 255, 0) 70%);
+        position: absolute;
+        top: 325px;
+        left: 375px;
+        filter: blur(75px);
+        max-width: 100%;    
+    }
+    
+    .color2 {
+        height: 850px;
+        width: 850px;
+        background-image: radial-gradient(circle, rgb(255, 1, 255) 0%, rgb(134, 4, 255) 10%, rgba(255, 255, 255, 0) 70%);
+        position: absolute;
+        top: 700px;
+        left: -250px;
+        filter: blur(75px);
+        max-width: 100%;
+    }
+
+    .text-content h2 {
+        margin-top: -150px; /* Adjust as needed */
+        font-size: 1.8em;
+        text-align: left;
+        margin-left: 50px;
+        
+    }
+    
+    .text-content h3 {
+        margin-top: -5px; /* Adjust as needed */
+        font-size: 1.8em;
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    .text-content p {
+       /* Adjust as needed */
+        text-align: left;
+        margin-top: 30px; /* You can still adjust the top margin */
+        margin-left: 55px; /* Example of padding adjustment */
+        position: relative; /* Example of relative positioning */
+        left: 30px; /* Example of left positioning */
+    }
+
+    .contact-left img{
+        display: none;
+    }
+    
+    .hero {
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        background-size: cover;
+        padding: 175px 50px;
+        margin-top: -20px;
+    }
+
+    .contact-right-title h2{
+        font-weight: 300;
+        color: #000000;
+        font-size: 25px;
+        margin-bottom: 5px;
+        position: absolute;
+        left: 25px;
+        top: 2675px;
+    }
+    
+    .contact-right-title hr{
+        border: none;
+        width: 350px;
+        height: 5px;
+        background-color: #000000;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: absolute;
+        left: 25px;
+        top: 2725px;
+    } 
+    
+    .contact-inputs{
+        width: 450px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        color: #373737;
+        border-radius: 7px;
+    }
+    
+    .contact-right textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+    
+    .contact-inputs:focus{
+        border: 2px solid #650bec;
+    }
+        .contact-inputs::placeholder{
+        color: #a9a9a9;
+    }    
+    
+    .contact-right button{
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: #650bec;
+        cursor: pointer;
+        border-radius: 8px;
+        position: absolute;
+        left: 25px;
+    }
+
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        cursor: pointer;
+    }
+
+}
+
 .hero {
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -375,10 +617,6 @@ header {
     position: relative; /* Example of relative positioning */
     left: 30px; /* Example of left positioning */
 }
-
-
-
-
 
 .pagination {
     text-align: center;
@@ -566,7 +804,6 @@ header {
 .photo-right img{
     border-radius: 8px;
     width: 475px;
-    
 }
 
 .photo-left {
@@ -945,26 +1182,6 @@ header {
     background-color: #7f00ff; /* Darker shade on hover */
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-info, .contact-form form {
-        width: 100%;
-        max-width: none;
-        padding: 0 15px; /* Add padding on smaller screens */
-    }
-
-    .contact-info {
-        text-align: center; /* Center the text on smaller screens */
-    }
-
-    .contact-image {
-        margin-top: 20px; /* Add space above the image on smaller screens */
-    }
-}
 
    
 .contact-container {
@@ -995,7 +1212,7 @@ header {
 
 .contact-right-title h2{
     font-weight: 600;
-    color: #010101;
+    color: #000000;
     font-size: 40px;
     margin-bottom: 5px;
 }
@@ -1021,15 +1238,9 @@ header {
 }
 
 .contact-right textarea{
-        height: 140px;
-        padding-top: 15px;
-        border-radius: 20px;
-}
-
-.contact-right textarea{
     height: 140px;
     padding-top: 15px;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 .contact-inputs:focus{
     border: 2px solid #650bec;
@@ -1069,28 +1280,6 @@ header {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
-#check{
-    display: none;
-}
-@media screen and (max-width: 800px) { /* Added 'and' after 'screen' */
-    .contact-inputs {
-        width: 80vw;
-    }
-    .contact-left { /* Removed extra 'I' before .contact-left */
-        display: none;
-    }
-    .team-member {
-        width: calc(50% - 20px); /* Adjust for mobile */
-    }
-    .social-icons {
-        display: none;
-    }
-    
-    .social-icons img {
-        display: none;
-    }
-    
 }
 
 
