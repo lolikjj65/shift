@@ -1343,7 +1343,7 @@
         margin: -65px auto 30px auto; /* Adjust the margins and center the image */
         border-radius: 10px; /* Apply border radius to the image */
         display: block; /* Ensure the image is a block element */
-        transform: scale(2.2); /* Scale the image to 1.5 times its original size */
+        transform: scale(2.5); /* Scale the image to 1.5 times its original size */
         transform-origin: center center; /* Ensure the scaling is centered */
     }
 
