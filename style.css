@@ -690,42 +690,41 @@
   
 @media (max-width: 768px) {
     .team-photo {
-        max-width: 175%; /* Adjust the maximum width of the image */
-        margin-right: 1px; /* Adjust the right margin to move the image horizontally */
-        margin-top: -65px; /* Adjust the top margin to move the image vertically */
-        margin-bottom: 30px; /* Adjust the bottom margin to move the image vertically */
+        max-width: 100%; /* Ensure the image fits within the screen width */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-top: -65px; /* Adjust the top margin if necessary */
+        margin-bottom: 30px; /* Adjust the bottom margin */
         border-radius: 10px; /* Apply border radius to the image */
-        position: static; /* Enable positioning */
+        display: block; /* Ensure the image is a block element */
     }
     .content .text-content h2 {
-        margin-top: -150px; /* Adjust as needed */
-        font-size: 1.8em;
-        text-align: left;
-        margin-left: -410px;
+        margin-top: 20px; /* Adjust as needed */
+        font-size: 1.5em; /* Slightly smaller font size for better fit */
+        text-align: center; /* Center the heading text */
+        margin-left: 0; /* Remove excessive left margin */
         z-index: 1;
         position: relative;
     }
     
     .content .text-content h3 {
-        margin-top: -5px; /* Adjust as needed */
-        font-size: 1.8em;
-        text-align: left;
-        margin-left: -850px;
+        margin-top: 10px; /* Adjust as needed */
+        font-size: 1.4em; /* Slightly smaller font size than h2 */
+        text-align: center; /* Center the heading text */
+        margin-left: 0; /* Remove excessive left margin */
         z-index: 1;
+        position: relative;
     }
     
     .content .text-content p {
-       /* Adjust as needed */
-        text-align: left;
-        margin-top: 30px; /* You can still adjust the top margin */
-        margin-left: -850px; /* Example of padding adjustment */
-        position: sticky; /* Example of relative positioning */
-        left: 80px; /* Example of left positioning */
+        text-align: center; /* Center the paragraph text */
+        margin-top: 20px; /* Adjust the top margin */
+        margin-left: 0; /* Remove excessive left margin */
+        position: relative; /* Ensure relative positioning */
+        left: 0; /* Reset left positioning */
         z-index: 1;
     }
-
-    
 }
+
 
   .text-content h2 {
       margin-top: -150px; /* Adjust as needed */
