@@ -1337,10 +1337,9 @@
   
   @media (max-width: 768px) {
     .team-photo {
-        max-width: 150%; /* Ensure the image fits within the screen width */
-        margin: 0 auto; /* Center the image horizontally */
-        margin-top: -65px; /* Adjust the top margin if necessary */
-        margin-bottom: 30px; /* Adjust the bottom margin */
+        width: 100%; /* Ensure the image fits within the screen width */
+        height: auto; /* Maintain the aspect ratio */
+        margin: -65px auto 30px auto; /* Adjust the margins and center the image */
         border-radius: 10px; /* Apply border radius to the image */
         display: block; /* Ensure the image is a block element */
     }
